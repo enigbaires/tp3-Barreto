@@ -25,29 +25,6 @@ namespace ViewWeb
             int result = qtyAux;
             int index = shoppingCartList.IndexOf(itemListSelected);
 
-            //if (op=="minus")
-            //{
-            //    if (qtyAux > 1)
-            //    {
-            //        result = qtyAux - 1;
-            //    }
-            //    else
-            //    {
-            //        Response.Redirect("~/ShoppingCart");
-            //    }
-            //}
-            //else
-            //{
-            //    if (op == "plus")
-            //    {
-            //        result = qtyAux + 1;
-            //    }
-            //    else
-            //    {
-            //        Response.Redirect("~/");
-            //    }
-            //}
-
             switch (op)
             {
                 case "minus":
