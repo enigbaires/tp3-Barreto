@@ -1,0 +1,12 @@
+C:\emanuel\tp2\TP2_Barreto\TP2_Barreto\Model\bin\Debug\Model.dll
+C:\emanuel\tp2\TP2_Barreto\TP2_Barreto\Model\bin\Debug\Model.pdb
+C:\emanuel\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\emanuel\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\emanuel\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.dll
+C:\emanuel\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.pdb
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\tp2\TP2_Barreto\TP2_Barreto\Model\bin\Debug\Model.dll
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\tp2\TP2_Barreto\TP2_Barreto\Model\bin\Debug\Model.pdb
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.dll
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\tp2\TP2_Barreto\TP2_Barreto\Model\obj\Debug\Model.pdb
