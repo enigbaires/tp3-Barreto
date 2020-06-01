@@ -28,6 +28,7 @@
                         <div class="input-group-append" id="button-addon4">
                             <a class="btn btn-outline-secondary" href="OpMat?id=<% = item.id.ToString()%>&op=minus">-</a>
                             <a class="btn btn-outline-secondary" href="OpMat?id=<% = item.id.ToString()%>&op=plus">+</a>
+                            <a class="btn btn-outline-danger" href="OpMat?id=<% = item.id.ToString()%>&op=del">X</a>
                         </div>
                     </div>
 

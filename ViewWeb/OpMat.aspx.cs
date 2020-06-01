@@ -19,41 +19,66 @@ namespace ViewWeb
             int idItemSelected = Convert.ToInt32(Request.QueryString["id"]);
             String op = Request.QueryString["op"];
             CarritoDeCompras itemListSelected = shoppingCartList.Find(J => J.id == idItemSelected);
+            if (itemListSelected == null) Response.Redirect("~/");
             DAOCarritoDeCompras dAOCarritoDeCompras = new DAOCarritoDeCompras();
             int qtyAux = itemListSelected.cantidad;
             int result = qtyAux;
-
-            if (op=="minus")
-            {
-                if (qtyAux > 1)
-                {
-                    result = qtyAux - 1;
-                }
-                else
-                {
-                    Response.Redirect("~/ShoppingCart");
-                }
-            }
-            else
-            {
-                if (op == "plus")
-                {
-                    result = qtyAux + 1;
-                }
-                else
-                {
-                    Response.Redirect("~/");
-                }
-            }
-            
             int index = shoppingCartList.IndexOf(itemListSelected);
 
+            //if (op=="minus")
+            //{
+            //    if (qtyAux > 1)
+            //    {
+            //        result = qtyAux - 1;
+            //    }
+            //    else
+            //    {
+            //        Response.Redirect("~/ShoppingCart");
+            //    }
+            //}
+            //else
+            //{
+            //    if (op == "plus")
+            //    {
+            //        result = qtyAux + 1;
+            //    }
+            //    else
+            //    {
+            //        Response.Redirect("~/");
+            //    }
+            //}
+
+            switch (op)
+            {
+                case "minus":
+                    if (qtyAux > 1)
+                    {
+                        result = qtyAux - 1;
+                    }
+                    else
+                    {
+                        Response.Redirect("~/ShoppingCart");
+                    }
+                    break;
+
+                case "plus":
+                    result = qtyAux + 1;
+                    break;
+
+                case "del":
+                    shoppingCartList.RemoveAt(index);
+                    Session[Session.SessionID + "shoppingCartList"] = shoppingCartList;
+                    Response.Redirect("~/ShoppingCart");
+                    break;
+
+                default:
+                    Response.Redirect("~/");
+                    break;
+            }
+
             itemListSelected.cantidad = result;
-
             shoppingCartList[index] = itemListSelected;
-
             Session[Session.SessionID + "shoppingCartList"] = shoppingCartList;
-
             Response.Redirect("~/ShoppingCart");
 
         }
